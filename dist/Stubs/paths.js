@@ -4,6 +4,7 @@ define(function() {
     return {
         'Core/appendForwardSlash' : '../Stubs/Cesium',
         'Core/ArcGisImageServerTerrainProvider' : '../Stubs/Cesium',
+        'Core/arrayRemoveDuplicates' : '../Stubs/Cesium',
         'Core/AssociativeArray' : '../Stubs/Cesium',
         'Core/AttributeCompression' : '../Stubs/Cesium',
         'Core/AxisAlignedBoundingBox' : '../Stubs/Cesium',
@@ -45,7 +46,6 @@ define(function() {
         'Core/DefaultProxy' : '../Stubs/Cesium',
         'Core/defaultValue' : '../Stubs/Cesium',
         'Core/defined' : '../Stubs/Cesium',
-        'Core/definedNotNull' : '../Stubs/Cesium',
         'Core/defineProperties' : '../Stubs/Cesium',
         'Core/deprecationWarning' : '../Stubs/Cesium',
         'Core/destroyObject' : '../Stubs/Cesium',
@@ -442,7 +442,6 @@ define(function() {
         'Scene/TileCoordinatesImageryProvider' : '../Stubs/Cesium',
         'Scene/TileDiscardPolicy' : '../Stubs/Cesium',
         'Scene/TileImagery' : '../Stubs/Cesium',
-        'Scene/TileMapServiceImageryProvider' : '../Stubs/Cesium',
         'Scene/TileReplacementQueue' : '../Stubs/Cesium',
         'Scene/TileState' : '../Stubs/Cesium',
         'Scene/TileTerrain' : '../Stubs/Cesium',

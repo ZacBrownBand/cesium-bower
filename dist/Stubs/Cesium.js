@@ -10,6 +10,10 @@ define('Core/ArcGisImageServerTerrainProvider', function() {
     return Cesium['ArcGisImageServerTerrainProvider'];
 });
 
+define('Core/arrayRemoveDuplicates', function() {
+    return Cesium['arrayRemoveDuplicates'];
+});
+
 define('Core/AssociativeArray', function() {
     return Cesium['AssociativeArray'];
 });
@@ -172,10 +176,6 @@ define('Core/defaultValue', function() {
 
 define('Core/defined', function() {
     return Cesium['defined'];
-});
-
-define('Core/definedNotNull', function() {
-    return Cesium['definedNotNull'];
 });
 
 define('Core/defineProperties', function() {
@@ -1760,10 +1760,6 @@ define('Scene/TileDiscardPolicy', function() {
 
 define('Scene/TileImagery', function() {
     return Cesium['TileImagery'];
-});
-
-define('Scene/TileMapServiceImageryProvider', function() {
-    return Cesium['TileMapServiceImageryProvider'];
 });
 
 define('Scene/TileReplacementQueue', function() {
