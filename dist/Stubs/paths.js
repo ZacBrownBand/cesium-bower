@@ -400,7 +400,6 @@ define(function() {
         'Scene/Moon' : '../Stubs/Cesium',
         'Scene/NeverTileDiscardPolicy' : '../Stubs/Cesium',
         'Scene/OIT' : '../Stubs/Cesium',
-        'Scene/OpenStreetMapImageryProvider' : '../Stubs/Cesium',
         'Scene/OrthographicFrustum' : '../Stubs/Cesium',
         'Scene/Pass' : '../Stubs/Cesium',
         'Scene/PerformanceDisplay' : '../Stubs/Cesium',

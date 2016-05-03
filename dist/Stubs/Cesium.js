@@ -1594,10 +1594,6 @@ define('Scene/OIT', function() {
     return Cesium['OIT'];
 });
 
-define('Scene/OpenStreetMapImageryProvider', function() {
-    return Cesium['OpenStreetMapImageryProvider'];
-});
-
 define('Scene/OrthographicFrustum', function() {
     return Cesium['OrthographicFrustum'];
 });
