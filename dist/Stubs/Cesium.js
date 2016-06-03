@@ -1170,6 +1170,10 @@ define('DataSources/VelocityOrientationProperty', function() {
     return Cesium['VelocityOrientationProperty'];
 });
 
+define('DataSources/VelocityVectorProperty', function() {
+    return Cesium['VelocityVectorProperty'];
+});
+
 define('DataSources/Visualizer', function() {
     return Cesium['Visualizer'];
 });
@@ -1706,6 +1710,14 @@ define('Scene/ScreenSpaceCameraController', function() {
     return Cesium['ScreenSpaceCameraController'];
 });
 
+define('Scene/ShadowMap', function() {
+    return Cesium['ShadowMap'];
+});
+
+define('Scene/ShadowMapShader', function() {
+    return Cesium['ShadowMapShader'];
+});
+
 define('Scene/SingleTileImageryProvider', function() {
     return Cesium['SingleTileImageryProvider'];
 });
@@ -2014,6 +2026,22 @@ define('Shaders/Builtin/Functions/antialias', function() {
     return Cesium['antialias'];
 });
 
+define('Shaders/Builtin/Functions/cascadeColor', function() {
+    return Cesium['cascadeColor'];
+});
+
+define('Shaders/Builtin/Functions/cascadeDistance', function() {
+    return Cesium['cascadeDistance'];
+});
+
+define('Shaders/Builtin/Functions/cascadeMatrix', function() {
+    return Cesium['cascadeMatrix'];
+});
+
+define('Shaders/Builtin/Functions/cascadeWeights', function() {
+    return Cesium['cascadeWeights'];
+});
+
 define('Shaders/Builtin/Functions/columbusViewMorph', function() {
     return Cesium['columbusViewMorph'];
 });
@@ -2150,6 +2178,14 @@ define('Shaders/Builtin/Functions/saturation', function() {
     return Cesium['saturation'];
 });
 
+define('Shaders/Builtin/Functions/shadowDepthCompare', function() {
+    return Cesium['shadowDepthCompare'];
+});
+
+define('Shaders/Builtin/Functions/shadowVisibility', function() {
+    return Cesium['shadowVisibility'];
+});
+
 define('Shaders/Builtin/Functions/signNotZero', function() {
     return Cesium['signNotZero'];
 });
@@ -2204,6 +2240,10 @@ define('Shaders/Builtin/Structs/ray', function() {
 
 define('Shaders/Builtin/Structs/raySegment', function() {
     return Cesium['raySegment'];
+});
+
+define('Shaders/Builtin/Structs/shadowParameters', function() {
+    return Cesium['shadowParameters'];
 });
 
 define('Shaders/CompositeOITFS', function() {
