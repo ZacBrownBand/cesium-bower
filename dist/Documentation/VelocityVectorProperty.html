@@ -42,11 +42,11 @@
     <div class="nameContainer">
     <h4 class="name" id="VelocityVectorProperty">
         <a href="#VelocityVectorProperty" class="doc-link"></a>
-        new Cesium.VelocityVectorProperty<span class="signature">(<span class="optional">position</span>)</span>
+        new Cesium.VelocityVectorProperty<span class="signature">(<span class="optional">position</span>, <span class="optional">normalize</span>)</span>
         
 
 <div class="source-link rightLinks">
-    <a href="https://github.com/AnalyticalGraphicsInc/cesium/blob/1.23/Source/DataSources/VelocityVectorProperty.js#L43">DataSources/VelocityVectorProperty.js 43</a>
+    <a href="https://github.com/AnalyticalGraphicsInc/cesium/blob/1.24/Source/DataSources/VelocityVectorProperty.js#L44">DataSources/VelocityVectorProperty.js 44</a>
 </div>
 
 
@@ -84,6 +84,8 @@ based on the velocity of the provided <a href="PositionProperty.html"><code>Posi
         <th>Type</th>
 
         
+        <th>Default</th>
+        
 
         <th class="last">Description</th>
     </tr>
@@ -107,6 +109,10 @@ based on the velocity of the provided <a href="PositionProperty.html"><code>Posi
             </td>
 
             
+                <td class="default">
+                
+                </td>
+            
 
             <td class="description last">
             
@@ -118,6 +124,42 @@ based on the velocity of the provided <a href="PositionProperty.html"><code>Posi
                 
             
                 The position property used to compute the velocity.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>normalize</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Boolean</span>
+
+
+            
+            </td>
+
+            
+                <td class="default">
+                
+                    <code class="language-javascript">true</code>
+                
+                </td>
+            
+
+            <td class="description last">
+            
+                
+                        <span class="optional">optional</span>
+                
+                
+
+                
+            
+                Whether to normalize the computed velocity vector.</td>
         </tr>
 
     
@@ -167,7 +209,7 @@ var entity = viewer.entities.add({
   position : position,
   billboard : {
     image : 'image.png',
-    alignedAxis : new Cesium.VelocityVectorProperty(position)
+    alignedAxis : new Cesium.VelocityVectorProperty(position, true) // alignedAxis must be a unit vector
   }
 }));</code></pre>
 
@@ -210,7 +252,7 @@ var entity = viewer.entities.add({
         
 
 <div class="source-link rightLinks">
-    <a href="https://github.com/AnalyticalGraphicsInc/cesium/blob/1.23/Source/DataSources/VelocityVectorProperty.js#L71">DataSources/VelocityVectorProperty.js 71</a>
+    <a href="https://github.com/AnalyticalGraphicsInc/cesium/blob/1.24/Source/DataSources/VelocityVectorProperty.js#L73">DataSources/VelocityVectorProperty.js 73</a>
 </div>
 
 
@@ -272,7 +314,7 @@ var entity = viewer.entities.add({
         
 
 <div class="source-link rightLinks">
-    <a href="https://github.com/AnalyticalGraphicsInc/cesium/blob/1.23/Source/DataSources/VelocityVectorProperty.js#L59">DataSources/VelocityVectorProperty.js 59</a>
+    <a href="https://github.com/AnalyticalGraphicsInc/cesium/blob/1.24/Source/DataSources/VelocityVectorProperty.js#L61">DataSources/VelocityVectorProperty.js 61</a>
 </div>
 
 
@@ -328,13 +370,13 @@ var entity = viewer.entities.add({
             
 <dt>
     <div class="nameContainer">
-    <h4 class="name" id="position">
-        <a href="#position" class="doc-link"></a>
-        position<span class="type-signature"> : <a href="Property.html">Property</a></span>
+    <h4 class="name" id="normalize">
+        <a href="#normalize" class="doc-link"></a>
+        normalize<span class="type-signature"> : Boolean</span>
         
 
 <div class="source-link rightLinks">
-    <a href="https://github.com/AnalyticalGraphicsInc/cesium/blob/1.23/Source/DataSources/VelocityVectorProperty.js#L82">DataSources/VelocityVectorProperty.js 82</a>
+    <a href="https://github.com/AnalyticalGraphicsInc/cesium/blob/1.24/Source/DataSources/VelocityVectorProperty.js#L114">DataSources/VelocityVectorProperty.js 114</a>
 </div>
 
 
@@ -347,7 +389,70 @@ var entity = viewer.entities.add({
 <dd>
     
     <div class="description">
-        Gets or sets the position property used to compute orientation.
+        Gets or sets whether the vector produced by this property
+will be normalized or not.
+    </div>
+    
+
+    
+
+    
+<dl class="details">
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+    <h4 class="name" id="position">
+        <a href="#position" class="doc-link"></a>
+        position<span class="type-signature"> : <a href="Property.html">Property</a></span>
+        
+
+<div class="source-link rightLinks">
+    <a href="https://github.com/AnalyticalGraphicsInc/cesium/blob/1.24/Source/DataSources/VelocityVectorProperty.js#L84">DataSources/VelocityVectorProperty.js 84</a>
+</div>
+
+
+    </h4>
+
+    </div>
+
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        Gets or sets the position property used to compute the velocity vector.
     </div>
     
 
@@ -402,7 +507,7 @@ var entity = viewer.entities.add({
         
 
 <div class="source-link rightLinks">
-    <a href="https://github.com/AnalyticalGraphicsInc/cesium/blob/1.23/Source/DataSources/VelocityVectorProperty.js#L180">DataSources/VelocityVectorProperty.js 180</a>
+    <a href="https://github.com/AnalyticalGraphicsInc/cesium/blob/1.24/Source/DataSources/VelocityVectorProperty.js#L205">DataSources/VelocityVectorProperty.js 205</a>
 </div>
 
 
@@ -545,7 +650,7 @@ var entity = viewer.entities.add({
         
 
 <div class="source-link rightLinks">
-    <a href="https://github.com/AnalyticalGraphicsInc/cesium/blob/1.23/Source/DataSources/VelocityVectorProperty.js#L120">DataSources/VelocityVectorProperty.js 120</a>
+    <a href="https://github.com/AnalyticalGraphicsInc/cesium/blob/1.24/Source/DataSources/VelocityVectorProperty.js#L141">DataSources/VelocityVectorProperty.js 141</a>
 </div>
 
 

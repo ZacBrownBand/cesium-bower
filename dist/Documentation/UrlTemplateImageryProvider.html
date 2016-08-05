@@ -46,7 +46,7 @@
         
 
 <div class="source-link rightLinks">
-    <a href="https://github.com/AnalyticalGraphicsInc/cesium/blob/1.23/Source/Scene/UrlTemplateImageryProvider.js#L160">Scene/UrlTemplateImageryProvider.js 160</a>
+    <a href="https://github.com/AnalyticalGraphicsInc/cesium/blob/1.24/Source/Scene/UrlTemplateImageryProvider.js#L173">Scene/UrlTemplateImageryProvider.js 173</a>
 </div>
 
 
@@ -236,6 +236,52 @@
     <li><code>{longitudeProjected}</code>: The longitude of the picked position in the projected coordinates of the tiling scheme.</li>
     <li><code>{latitudeProjected}</code>: The latitude of the picked position in the projected coordinates of the tiling scheme.</li>
     <li><code>{format}</code>: The format in which to get feature information, as specified in the <a href="GetFeatureInfoFormat.html"><code>GetFeatureInfoFormat</code></a>.</li>
+</ul></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>urlSchemeZeroPadding</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last">
+            
+                
+                        <span class="optional">optional</span>
+                
+                
+
+                
+            
+                Gets the URL scheme zero padding for each tile coordinate. The format is '000' where
+each coordinate will be padded on the left with zeros to match the width of the passed string of zeros. e.g. Setting:
+urlSchemeZeroPadding : { '{x}' : '0000'}
+will cause an 'x' value of 12 to return the string '0012' for {x} in the generated URL.
+It the passed object has the following keywords:
+<ul>
+ <li> <code>{z}</code>: The zero padding for the level of the tile in the tiling scheme.</li>
+ <li> <code>{x}</code>: The zero padding for the tile X coordinate in the tiling scheme.</li>
+ <li> <code>{y}</code>: The zero padding for the the tile Y coordinate in the tiling scheme.</li>
+ <li> <code>{reverseX}</code>: The zero padding for the tile reverseX coordinate in the tiling scheme.</li>
+ <li> <code>{reverseY}</code>: The zero padding for the tile reverseY coordinate in the tiling scheme.</li>
+ <li> <code>{reverseZ}</code>: The zero padding for the reverseZ coordinate of the tile in the tiling scheme.</li>
 </ul></td>
         </tr>
 
@@ -852,7 +898,7 @@ var wms = new Cesium.UrlTemplateImageryProvider({
         
 
 <div class="source-link rightLinks">
-    <a href="https://github.com/AnalyticalGraphicsInc/cesium/blob/1.23/Source/Scene/UrlTemplateImageryProvider.js#L451">Scene/UrlTemplateImageryProvider.js 451</a>
+    <a href="https://github.com/AnalyticalGraphicsInc/cesium/blob/1.24/Source/Scene/UrlTemplateImageryProvider.js#L490">Scene/UrlTemplateImageryProvider.js 490</a>
 </div>
 
 
@@ -918,7 +964,7 @@ the source of the imagery.  This function should not be called before <a href="U
         
 
 <div class="source-link rightLinks">
-    <a href="https://github.com/AnalyticalGraphicsInc/cesium/blob/1.23/Source/Scene/UrlTemplateImageryProvider.js#L195">Scene/UrlTemplateImageryProvider.js 195</a>
+    <a href="https://github.com/AnalyticalGraphicsInc/cesium/blob/1.24/Source/Scene/UrlTemplateImageryProvider.js#L209">Scene/UrlTemplateImageryProvider.js 209</a>
 </div>
 
 
@@ -987,7 +1033,7 @@ source does not support picking features or if you don't want this provider's fe
         
 
 <div class="source-link rightLinks">
-    <a href="https://github.com/AnalyticalGraphicsInc/cesium/blob/1.23/Source/Scene/UrlTemplateImageryProvider.js#L413">Scene/UrlTemplateImageryProvider.js 413</a>
+    <a href="https://github.com/AnalyticalGraphicsInc/cesium/blob/1.24/Source/Scene/UrlTemplateImageryProvider.js#L452">Scene/UrlTemplateImageryProvider.js 452</a>
 </div>
 
 
@@ -1051,7 +1097,7 @@ are passed an instance of <a href="TileProviderError.html"><code>TileProviderErr
         
 
 <div class="source-link rightLinks">
-    <a href="https://github.com/AnalyticalGraphicsInc/cesium/blob/1.23/Source/Scene/UrlTemplateImageryProvider.js#L474">Scene/UrlTemplateImageryProvider.js 474</a>
+    <a href="https://github.com/AnalyticalGraphicsInc/cesium/blob/1.24/Source/Scene/UrlTemplateImageryProvider.js#L513">Scene/UrlTemplateImageryProvider.js 513</a>
 </div>
 
 
@@ -1121,7 +1167,7 @@ not be called before <a href="ImageryProvider.html#ready"><code>ImageryProvider#
         
 
 <div class="source-link rightLinks">
-    <a href="https://github.com/AnalyticalGraphicsInc/cesium/blob/1.23/Source/Scene/UrlTemplateImageryProvider.js#L316">Scene/UrlTemplateImageryProvider.js 316</a>
+    <a href="https://github.com/AnalyticalGraphicsInc/cesium/blob/1.24/Source/Scene/UrlTemplateImageryProvider.js#L355">Scene/UrlTemplateImageryProvider.js 355</a>
 </div>
 
 
@@ -1187,7 +1233,7 @@ This function should not be called before <a href="UrlTemplateImageryProvider.ht
         
 
 <div class="source-link rightLinks">
-    <a href="https://github.com/AnalyticalGraphicsInc/cesium/blob/1.23/Source/Scene/UrlTemplateImageryProvider.js#L335">Scene/UrlTemplateImageryProvider.js 335</a>
+    <a href="https://github.com/AnalyticalGraphicsInc/cesium/blob/1.24/Source/Scene/UrlTemplateImageryProvider.js#L374">Scene/UrlTemplateImageryProvider.js 374</a>
 </div>
 
 
@@ -1253,7 +1299,7 @@ not be called before <a href="UrlTemplateImageryProvider.html#ready"><code>UrlTe
         
 
 <div class="source-link rightLinks">
-    <a href="https://github.com/AnalyticalGraphicsInc/cesium/blob/1.23/Source/Scene/UrlTemplateImageryProvider.js#L264">Scene/UrlTemplateImageryProvider.js 264</a>
+    <a href="https://github.com/AnalyticalGraphicsInc/cesium/blob/1.24/Source/Scene/UrlTemplateImageryProvider.js#L303">Scene/UrlTemplateImageryProvider.js 303</a>
 </div>
 
 
@@ -1318,7 +1364,7 @@ not be called before <a href="UrlTemplateImageryProvider.html#ready"><code>UrlTe
         
 
 <div class="source-link rightLinks">
-    <a href="https://github.com/AnalyticalGraphicsInc/cesium/blob/1.23/Source/Scene/UrlTemplateImageryProvider.js#L425">Scene/UrlTemplateImageryProvider.js 425</a>
+    <a href="https://github.com/AnalyticalGraphicsInc/cesium/blob/1.24/Source/Scene/UrlTemplateImageryProvider.js#L464">Scene/UrlTemplateImageryProvider.js 464</a>
 </div>
 
 
@@ -1380,7 +1426,7 @@ not be called before <a href="UrlTemplateImageryProvider.html#ready"><code>UrlTe
         
 
 <div class="source-link rightLinks">
-    <a href="https://github.com/AnalyticalGraphicsInc/cesium/blob/1.23/Source/Scene/UrlTemplateImageryProvider.js#L437">Scene/UrlTemplateImageryProvider.js 437</a>
+    <a href="https://github.com/AnalyticalGraphicsInc/cesium/blob/1.24/Source/Scene/UrlTemplateImageryProvider.js#L476">Scene/UrlTemplateImageryProvider.js 476</a>
 </div>
 
 
@@ -1442,7 +1488,7 @@ not be called before <a href="UrlTemplateImageryProvider.html#ready"><code>UrlTe
         
 
 <div class="source-link rightLinks">
-    <a href="https://github.com/AnalyticalGraphicsInc/cesium/blob/1.23/Source/Scene/UrlTemplateImageryProvider.js#L373">Scene/UrlTemplateImageryProvider.js 373</a>
+    <a href="https://github.com/AnalyticalGraphicsInc/cesium/blob/1.24/Source/Scene/UrlTemplateImageryProvider.js#L412">Scene/UrlTemplateImageryProvider.js 412</a>
 </div>
 
 
@@ -1508,7 +1554,7 @@ not be called before <a href="UrlTemplateImageryProvider.html#ready"><code>UrlTe
         
 
 <div class="source-link rightLinks">
-    <a href="https://github.com/AnalyticalGraphicsInc/cesium/blob/1.23/Source/Scene/UrlTemplateImageryProvider.js#L394">Scene/UrlTemplateImageryProvider.js 394</a>
+    <a href="https://github.com/AnalyticalGraphicsInc/cesium/blob/1.24/Source/Scene/UrlTemplateImageryProvider.js#L433">Scene/UrlTemplateImageryProvider.js 433</a>
 </div>
 
 
@@ -1576,7 +1622,7 @@ not be called before <a href="UrlTemplateImageryProvider.html#ready"><code>UrlTe
         
 
 <div class="source-link rightLinks">
-    <a href="https://github.com/AnalyticalGraphicsInc/cesium/blob/1.23/Source/Scene/UrlTemplateImageryProvider.js#L297">Scene/UrlTemplateImageryProvider.js 297</a>
+    <a href="https://github.com/AnalyticalGraphicsInc/cesium/blob/1.24/Source/Scene/UrlTemplateImageryProvider.js#L336">Scene/UrlTemplateImageryProvider.js 336</a>
 </div>
 
 
@@ -1642,7 +1688,7 @@ not be called before <a href="UrlTemplateImageryProvider.html#ready"><code>UrlTe
         
 
 <div class="source-link rightLinks">
-    <a href="https://github.com/AnalyticalGraphicsInc/cesium/blob/1.23/Source/Scene/UrlTemplateImageryProvider.js#L278">Scene/UrlTemplateImageryProvider.js 278</a>
+    <a href="https://github.com/AnalyticalGraphicsInc/cesium/blob/1.24/Source/Scene/UrlTemplateImageryProvider.js#L317">Scene/UrlTemplateImageryProvider.js 317</a>
 </div>
 
 
@@ -1708,7 +1754,7 @@ not be called before <a href="UrlTemplateImageryProvider.html#ready"><code>UrlTe
         
 
 <div class="source-link rightLinks">
-    <a href="https://github.com/AnalyticalGraphicsInc/cesium/blob/1.23/Source/Scene/UrlTemplateImageryProvider.js#L354">Scene/UrlTemplateImageryProvider.js 354</a>
+    <a href="https://github.com/AnalyticalGraphicsInc/cesium/blob/1.24/Source/Scene/UrlTemplateImageryProvider.js#L393">Scene/UrlTemplateImageryProvider.js 393</a>
 </div>
 
 
@@ -1774,7 +1820,7 @@ not be called before <a href="UrlTemplateImageryProvider.html#ready"><code>UrlTe
         
 
 <div class="source-link rightLinks">
-    <a href="https://github.com/AnalyticalGraphicsInc/cesium/blob/1.23/Source/Scene/UrlTemplateImageryProvider.js#L226">Scene/UrlTemplateImageryProvider.js 226</a>
+    <a href="https://github.com/AnalyticalGraphicsInc/cesium/blob/1.24/Source/Scene/UrlTemplateImageryProvider.js#L240">Scene/UrlTemplateImageryProvider.js 240</a>
 </div>
 
 
@@ -1845,6 +1891,80 @@ not be called before <a href="UrlTemplateImageryProvider.html#ready"><code>UrlTe
 
 </dd>
 
+        
+            
+<dt>
+    <div class="nameContainer">
+    <h4 class="name" id="urlSchemeZeroPadding">
+        <a href="#urlSchemeZeroPadding" class="doc-link"></a>
+        <span class="type-signature attribute-readonly">readonly</span>urlSchemeZeroPadding<span class="type-signature"> : Object</span>
+        
+
+<div class="source-link rightLinks">
+    <a href="https://github.com/AnalyticalGraphicsInc/cesium/blob/1.24/Source/Scene/UrlTemplateImageryProvider.js#L264">Scene/UrlTemplateImageryProvider.js 264</a>
+</div>
+
+
+    </h4>
+
+    </div>
+
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        Gets the URL scheme zero padding for each tile coordinate. The format is '000' where each coordinate will be padded on
+the left with zeros to match the width of the passed string of zeros. e.g. Setting:
+urlSchemeZeroPadding : { '{x}' : '0000'}
+will cause an 'x' value of 12 to return the string '0012' for {x} in the generated URL.
+It has the following keywords:
+<ul>
+ <li> <code>{z}</code>: The zero padding for the level of the tile in the tiling scheme.</li>
+ <li> <code>{x}</code>: The zero padding for the tile X coordinate in the tiling scheme.</li>
+ <li> <code>{y}</code>: The zero padding for the the tile Y coordinate in the tiling scheme.</li>
+ <li> <code>{reverseX}</code>: The zero padding for the tile reverseX coordinate in the tiling scheme.</li>
+ <li> <code>{reverseY}</code>: The zero padding for the tile reverseY coordinate in the tiling scheme.</li>
+ <li> <code>{reverseZ}</code>: The zero padding for the reverseZ coordinate of the tile in the tiling scheme.</li>
+</ul>
+    </div>
+    
+
+    
+
+    
+<dl class="details">
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+</dd>
+
         </dl>
     
 
@@ -1861,7 +1981,7 @@ not be called before <a href="UrlTemplateImageryProvider.html#ready"><code>UrlTe
         
 
 <div class="source-link rightLinks">
-    <a href="https://github.com/AnalyticalGraphicsInc/cesium/blob/1.23/Source/Scene/UrlTemplateImageryProvider.js#L550">Scene/UrlTemplateImageryProvider.js 550</a>
+    <a href="https://github.com/AnalyticalGraphicsInc/cesium/blob/1.24/Source/Scene/UrlTemplateImageryProvider.js#L590">Scene/UrlTemplateImageryProvider.js 590</a>
 </div>
 
 
@@ -2056,7 +2176,7 @@ not be called before <a href="UrlTemplateImageryProvider.html#ready"><code>UrlTe
         
 
 <div class="source-link rightLinks">
-    <a href="https://github.com/AnalyticalGraphicsInc/cesium/blob/1.23/Source/Scene/UrlTemplateImageryProvider.js#L595">Scene/UrlTemplateImageryProvider.js 595</a>
+    <a href="https://github.com/AnalyticalGraphicsInc/cesium/blob/1.24/Source/Scene/UrlTemplateImageryProvider.js#L635">Scene/UrlTemplateImageryProvider.js 635</a>
 </div>
 
 
@@ -2287,7 +2407,7 @@ a tile.  This function should not be called before <a href="ImageryProvider.html
         
 
 <div class="source-link rightLinks">
-    <a href="https://github.com/AnalyticalGraphicsInc/cesium/blob/1.23/Source/Scene/UrlTemplateImageryProvider.js#L492">Scene/UrlTemplateImageryProvider.js 492</a>
+    <a href="https://github.com/AnalyticalGraphicsInc/cesium/blob/1.24/Source/Scene/UrlTemplateImageryProvider.js#L531">Scene/UrlTemplateImageryProvider.js 531</a>
 </div>
 
 
@@ -2417,7 +2537,7 @@ recommended because existing tiles provided by the imagery provider will not be 
         
 
 <div class="source-link rightLinks">
-    <a href="https://github.com/AnalyticalGraphicsInc/cesium/blob/1.23/Source/Scene/UrlTemplateImageryProvider.js#L571">Scene/UrlTemplateImageryProvider.js 571</a>
+    <a href="https://github.com/AnalyticalGraphicsInc/cesium/blob/1.24/Source/Scene/UrlTemplateImageryProvider.js#L611">Scene/UrlTemplateImageryProvider.js 611</a>
 </div>
 
 
