@@ -1458,12 +1458,12 @@ define('Scene/FXAA', function() {
     return Cesium['FXAA'];
 });
 
-define('Scene/GetFeatureInfoFormat', function() {
-    return Cesium['GetFeatureInfoFormat'];
+define('Scene/getBinaryAccessor', function() {
+    return Cesium['getBinaryAccessor'];
 });
 
-define('Scene/getModelAccessor', function() {
-    return Cesium['getModelAccessor'];
+define('Scene/GetFeatureInfoFormat', function() {
+    return Cesium['GetFeatureInfoFormat'];
 });
 
 define('Scene/Globe', function() {
@@ -1728,6 +1728,10 @@ define('Scene/ShadowMap', function() {
 
 define('Scene/ShadowMapShader', function() {
     return Cesium['ShadowMapShader'];
+});
+
+define('Scene/ShadowMode', function() {
+    return Cesium['ShadowMode'];
 });
 
 define('Scene/SingleTileImageryProvider', function() {
