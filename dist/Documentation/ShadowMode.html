@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CesiumTerrainProvider - Cesium Documentation</title>
+    <title>ShadowMode - Cesium Documentation</title>
 
     <!--[if lt IE 9]>
       <script src="javascript/html5.js"></script>
@@ -18,7 +18,7 @@
 
     <h1 class="page-title">
         <a href="index.html"><img src="images/CesiumLogo.png" class="cesiumLogo"></a>
-        CesiumTerrainProvider
+        ShadowMode
         <div class="titleCenterer"></div>
     </h1>
 
@@ -40,13 +40,13 @@
         
 <dt>
     <div class="nameContainer">
-    <h4 class="name" id="CesiumTerrainProvider">
-        <a href="#CesiumTerrainProvider" class="doc-link"></a>
-        new Cesium.CesiumTerrainProvider<span class="signature">(options)</span>
+    <h4 class="name" id="ShadowMode">
+        <a href="#ShadowMode" class="doc-link"></a>
+        ShadowMode<span class="signature">()</span>
         
 
 <div class="source-link rightLinks">
-    <a href="https://github.com/AnalyticalGraphicsInc/cesium/blob/1.25/Source/Core/CesiumTerrainProvider.js#L97">Core/CesiumTerrainProvider.js 97</a>
+    <a href="https://github.com/AnalyticalGraphicsInc/cesium/blob/1.25/Source/Scene/ShadowMode.js#L14">Scene/ShadowMode.js 14</a>
 </div>
 
 
@@ -60,9 +60,8 @@
 
     
     <div class="description">
-        A <a href="TerrainProvider.html"><code>TerrainProvider</code></a> that access terrain data in a Cesium terrain format.
-The format is described on the
-<a href="https://github.com/AnalyticalGraphicsInc/cesium/wiki/Cesium-Terrain-Server">Cesium wiki</a>.
+        Specifies whether the object casts or receives shadows from each light source when
+shadows are enabled.
     </div>
     
 
@@ -72,284 +71,6 @@ The format is described on the
 
     
 
-    
-        
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>options</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Object</span>
-
-
-            
-            </td>
-
-            
-
-            <td class="description last">
-            
-                Object with the following properties:
-                
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-        <th>Default</th>
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>url</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">String</span>
-
-
-            
-            </td>
-
-            
-                <td class="default">
-                
-                </td>
-            
-
-            <td class="description last">
-            
-                
-                
-
-                
-            
-                The URL of the Cesium terrain server.</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>proxy</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Proxy</span>
-
-
-            
-            </td>
-
-            
-                <td class="default">
-                
-                </td>
-            
-
-            <td class="description last">
-            
-                
-                        <span class="optional">optional</span>
-                
-                
-
-                
-            
-                A proxy to use for requests. This object is expected to have a getURL function which returns the proxied URL, if needed.</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>requestVertexNormals</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Boolean</span>
-
-
-            
-            </td>
-
-            
-                <td class="default">
-                
-                    <code class="language-javascript">false</code>
-                
-                </td>
-            
-
-            <td class="description last">
-            
-                
-                        <span class="optional">optional</span>
-                
-                
-
-                
-            
-                Flag that indicates if the client should request additional lighting information from the server, in the form of per vertex normals if available.</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>requestWaterMask</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Boolean</span>
-
-
-            
-            </td>
-
-            
-                <td class="default">
-                
-                    <code class="language-javascript">false</code>
-                
-                </td>
-            
-
-            <td class="description last">
-            
-                
-                        <span class="optional">optional</span>
-                
-                
-
-                
-            
-                Flag that indicates if the client should request per tile water masks from the server,  if available.</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>ellipsoid</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><a href="Ellipsoid.html">Ellipsoid</a></span>
-
-
-            
-            </td>
-
-            
-                <td class="default">
-                
-                </td>
-            
-
-            <td class="description last">
-            
-                
-                        <span class="optional">optional</span>
-                
-                
-
-                
-            
-                The ellipsoid.  If not specified, the WGS84 ellipsoid is used.</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>credit</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><a href="Credit.html">Credit</a></span>
-|
-
-<span class="param-type">String</span>
-
-
-            
-            </td>
-
-            
-                <td class="default">
-                
-                </td>
-            
-
-            <td class="description last">
-            
-                
-                        <span class="optional">optional</span>
-                
-                
-
-                
-            
-                A credit for the data source, which is displayed on the canvas.</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-            </td>
-        </tr>
-
-    
-    </tbody>
-</table>
     
 
     
@@ -385,42 +106,11 @@ The format is described on the
     
 
     
-        <h5>Example:</h5>
-        
-    <pre><code class="language-javascript">// Construct a terrain provider that uses per vertex normals for lighting
-// to add shading detail to an imagery provider.
-var terrainProvider = new Cesium.CesiumTerrainProvider({
-    url : 'https://assets.agi.com/stk-terrain/world',
-    requestVertexNormals : true
-});
-
-// Terrain geometry near the surface of the globe is difficult to view when using NaturalEarthII imagery,
-// unless the TerrainProvider provides additional lighting information to shade the terrain (as shown above).
-var imageryProvider = Cesium.createTileMapServiceImageryProvider({
-       url : 'http://localhost:8080/Source/Assets/Textures/NaturalEarthII',
-       fileExtension : 'jpg'
-   });
-
-var viewer = new Cesium.Viewer('cesiumContainer', {
-    imageryProvider : imageryProvider,
-    baseLayerPicker : false,
-    terrainProvider : terrainProvider
-});
-
-// The globe must enable lighting to make use of the terrain's vertex normals
-viewer.scene.globe.enableLighting = true;</code></pre>
 
     
 
     
 
-    
-
-    
-    <h5>See:</h5>
-    <ul class="see-list">
-        <li><a href="TerrainProvider.html">TerrainProvider</a></li>
-    </ul>
     
 
     
@@ -448,13 +138,13 @@ viewer.scene.globe.enableLighting = true;</code></pre>
             
 <dt>
     <div class="nameContainer">
-    <h4 class="name" id="credit">
-        <a href="#credit" class="doc-link"></a>
-        credit<span class="type-signature"> : <a href="Credit.html">Credit</a></span>
+    <h4 class="name" id=".CAST_ONLY">
+        <a href="#.CAST_ONLY" class="doc-link"></a>
+        <span class="type-signature attribute-static">static</span><span class="type-signature attribute-constant">constant</span>Cesium.ShadowMode.CAST_ONLY<span class="type-signature"> : Number</span>
         
 
 <div class="source-link rightLinks">
-    <a href="https://github.com/AnalyticalGraphicsInc/cesium/blob/1.25/Source/Core/CesiumTerrainProvider.js#L563">Core/CesiumTerrainProvider.js 563</a>
+    <a href="https://github.com/AnalyticalGraphicsInc/cesium/blob/1.25/Source/Scene/ShadowMode.js#L37">Scene/ShadowMode.js 37</a>
 </div>
 
 
@@ -467,8 +157,7 @@ viewer.scene.globe.enableLighting = true;</code></pre>
 <dd>
     
     <div class="description">
-        Gets the credit to display when this terrain provider is active.  Typically this is used to credit
-the source of the terrain.  This function should not be called before <a href="CesiumTerrainProvider.html#ready"><code>CesiumTerrainProvider#ready</code></a> returns true.
+        The object casts shadows only.
     </div>
     
 
@@ -511,13 +200,13 @@ the source of the terrain.  This function should not be called before <a href="C
             
 <dt>
     <div class="nameContainer">
-    <h4 class="name" id="errorEvent">
-        <a href="#errorEvent" class="doc-link"></a>
-        errorEvent<span class="type-signature"> : <a href="Event.html">Event</a></span>
+    <h4 class="name" id=".DISABLED">
+        <a href="#.DISABLED" class="doc-link"></a>
+        <span class="type-signature attribute-static">static</span><span class="type-signature attribute-constant">constant</span>Cesium.ShadowMode.DISABLED<span class="type-signature"> : Number</span>
         
 
 <div class="source-link rightLinks">
-    <a href="https://github.com/AnalyticalGraphicsInc/cesium/blob/1.25/Source/Core/CesiumTerrainProvider.js#L551">Core/CesiumTerrainProvider.js 551</a>
+    <a href="https://github.com/AnalyticalGraphicsInc/cesium/blob/1.25/Source/Scene/ShadowMode.js#L21">Scene/ShadowMode.js 21</a>
 </div>
 
 
@@ -530,9 +219,7 @@ the source of the terrain.  This function should not be called before <a href="C
 <dd>
     
     <div class="description">
-        Gets an event that is raised when the terrain provider encounters an asynchronous error.  By subscribing
-to the event, you will be notified of the error and can potentially recover from it.  Event listeners
-are passed an instance of <a href="TileProviderError.html"><code>TileProviderError</code></a>.
+        The object does not cast or receive shadows.
     </div>
     
 
@@ -575,13 +262,13 @@ are passed an instance of <a href="TileProviderError.html"><code>TileProviderErr
             
 <dt>
     <div class="nameContainer">
-    <h4 class="name" id="hasVertexNormals">
-        <a href="#hasVertexNormals" class="doc-link"></a>
-        hasVertexNormals<span class="type-signature"> : Boolean</span>
+    <h4 class="name" id=".ENABLED">
+        <a href="#.ENABLED" class="doc-link"></a>
+        <span class="type-signature attribute-static">static</span><span class="type-signature attribute-constant">constant</span>Cesium.ShadowMode.ENABLED<span class="type-signature"> : Number</span>
         
 
 <div class="source-link rightLinks">
-    <a href="https://github.com/AnalyticalGraphicsInc/cesium/blob/1.25/Source/Core/CesiumTerrainProvider.js#L644">Core/CesiumTerrainProvider.js 644</a>
+    <a href="https://github.com/AnalyticalGraphicsInc/cesium/blob/1.25/Source/Scene/ShadowMode.js#L29">Scene/ShadowMode.js 29</a>
 </div>
 
 
@@ -594,8 +281,7 @@ are passed an instance of <a href="TileProviderError.html"><code>TileProviderErr
 <dd>
     
     <div class="description">
-        Gets a value indicating whether or not the requested tiles include vertex normals.
-This function should not be called before <a href="CesiumTerrainProvider.html#ready"><code>CesiumTerrainProvider#ready</code></a> returns true.
+        The object casts and receives shadows.
     </div>
     
 
@@ -638,13 +324,13 @@ This function should not be called before <a href="CesiumTerrainProvider.html#re
             
 <dt>
     <div class="nameContainer">
-    <h4 class="name" id="hasWaterMask">
-        <a href="#hasWaterMask" class="doc-link"></a>
-        hasWaterMask<span class="type-signature"> : Boolean</span>
+    <h4 class="name" id=".RECEIVE_ONLY">
+        <a href="#.RECEIVE_ONLY" class="doc-link"></a>
+        <span class="type-signature attribute-static">static</span><span class="type-signature attribute-constant">constant</span>Cesium.ShadowMode.RECEIVE_ONLY<span class="type-signature"> : Number</span>
         
 
 <div class="source-link rightLinks">
-    <a href="https://github.com/AnalyticalGraphicsInc/cesium/blob/1.25/Source/Core/CesiumTerrainProvider.js#L625">Core/CesiumTerrainProvider.js 625</a>
+    <a href="https://github.com/AnalyticalGraphicsInc/cesium/blob/1.25/Source/Scene/ShadowMode.js#L45">Scene/ShadowMode.js 45</a>
 </div>
 
 
@@ -657,325 +343,7 @@ This function should not be called before <a href="CesiumTerrainProvider.html#re
 <dd>
     
     <div class="description">
-        Gets a value indicating whether or not the provider includes a water mask.  The water mask
-indicates which areas of the globe are water rather than land, so they can be rendered
-as a reflective surface with animated waves.  This function should not be
-called before <a href="CesiumTerrainProvider.html#ready"><code>CesiumTerrainProvider#ready</code></a> returns true.
-    </div>
-    
-
-    
-
-    
-<dl class="details">
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-</dd>
-
-        
-            
-<dt>
-    <div class="nameContainer">
-    <h4 class="name" id="ready">
-        <a href="#ready" class="doc-link"></a>
-        ready<span class="type-signature"> : Boolean</span>
-        
-
-<div class="source-link rightLinks">
-    <a href="https://github.com/AnalyticalGraphicsInc/cesium/blob/1.25/Source/Core/CesiumTerrainProvider.js#L598">Core/CesiumTerrainProvider.js 598</a>
-</div>
-
-
-    </h4>
-
-    </div>
-
-    
-</dt>
-<dd>
-    
-    <div class="description">
-        Gets a value indicating whether or not the provider is ready for use.
-    </div>
-    
-
-    
-
-    
-<dl class="details">
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-</dd>
-
-        
-            
-<dt>
-    <div class="nameContainer">
-    <h4 class="name" id="readyPromise">
-        <a href="#readyPromise" class="doc-link"></a>
-        <span class="type-signature attribute-readonly">readonly</span>readyPromise<span class="type-signature"> : Promise.&lt;Boolean></span>
-        
-
-<div class="source-link rightLinks">
-    <a href="https://github.com/AnalyticalGraphicsInc/cesium/blob/1.25/Source/Core/CesiumTerrainProvider.js#L610">Core/CesiumTerrainProvider.js 610</a>
-</div>
-
-
-    </h4>
-
-    </div>
-
-    
-</dt>
-<dd>
-    
-    <div class="description">
-        Gets a promise that resolves to true when the provider is ready for use.
-    </div>
-    
-
-    
-
-    
-<dl class="details">
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-</dd>
-
-        
-            
-<dt>
-    <div class="nameContainer">
-    <h4 class="name" id="requestVertexNormals">
-        <a href="#requestVertexNormals" class="doc-link"></a>
-        requestVertexNormals<span class="type-signature"> : Boolean</span>
-        
-
-<div class="source-link rightLinks">
-    <a href="https://github.com/AnalyticalGraphicsInc/cesium/blob/1.25/Source/Core/CesiumTerrainProvider.js#L664">Core/CesiumTerrainProvider.js 664</a>
-</div>
-
-
-    </h4>
-
-    </div>
-
-    
-</dt>
-<dd>
-    
-    <div class="description">
-        Boolean flag that indicates if the client should request vertex normals from the server.
-Vertex normals data is appended to the standard tile mesh data only if the client requests the vertex normals and
-if the server provides vertex normals.
-    </div>
-    
-
-    
-
-    
-<dl class="details">
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-</dd>
-
-        
-            
-<dt>
-    <div class="nameContainer">
-    <h4 class="name" id="requestWaterMask">
-        <a href="#requestWaterMask" class="doc-link"></a>
-        requestWaterMask<span class="type-signature"> : Boolean</span>
-        
-
-<div class="source-link rightLinks">
-    <a href="https://github.com/AnalyticalGraphicsInc/cesium/blob/1.25/Source/Core/CesiumTerrainProvider.js#L677">Core/CesiumTerrainProvider.js 677</a>
-</div>
-
-
-    </h4>
-
-    </div>
-
-    
-</dt>
-<dd>
-    
-    <div class="description">
-        Boolean flag that indicates if the client should request a watermask from the server.
-Watermask data is appended to the standard tile mesh data only if the client requests the watermask and
-if the server provides a watermask.
-    </div>
-    
-
-    
-
-    
-<dl class="details">
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-</dd>
-
-        
-            
-<dt>
-    <div class="nameContainer">
-    <h4 class="name" id="tilingScheme">
-        <a href="#tilingScheme" class="doc-link"></a>
-        tilingScheme<span class="type-signature"> : <a href="GeographicTilingScheme.html">GeographicTilingScheme</a></span>
-        
-
-<div class="source-link rightLinks">
-    <a href="https://github.com/AnalyticalGraphicsInc/cesium/blob/1.25/Source/Core/CesiumTerrainProvider.js#L581">Core/CesiumTerrainProvider.js 581</a>
-</div>
-
-
-    </h4>
-
-    </div>
-
-    
-</dt>
-<dd>
-    
-    <div class="description">
-        Gets the tiling scheme used by this provider.  This function should
-not be called before <a href="CesiumTerrainProvider.html#ready"><code>CesiumTerrainProvider#ready</code></a> returns true.
+        The object receives shadows only.
     </div>
     
 
@@ -1017,593 +385,6 @@ not be called before <a href="CesiumTerrainProvider.html#ready"><code>CesiumTerr
         </dl>
     
 
-    
-        <h3 class="subsection-title">Methods</h3>
-
-        <dl>
-            
-<dt>
-    <div class="nameContainer">
-    <h4 class="name" id="getLevelMaximumGeometricError">
-        <a href="#getLevelMaximumGeometricError" class="doc-link"></a>
-        getLevelMaximumGeometricError<span class="signature">(level)</span> &rarr; <span class="type-signature returnType">Number</span>
-        
-
-<div class="source-link rightLinks">
-    <a href="https://github.com/AnalyticalGraphicsInc/cesium/blob/1.25/Source/Core/CesiumTerrainProvider.js#L690">Core/CesiumTerrainProvider.js 690</a>
-</div>
-
-
-    </h4>
-
-    </div>
-
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        Gets the maximum geometric error allowed in a tile at a given level.
-    </div>
-    
-
-    
-
-    
-
-    
-
-    
-        
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>level</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Number</span>
-
-
-            
-            </td>
-
-            
-
-            <td class="description last">
-            
-                The tile level for which to get the maximum geometric error.</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <h5>Returns:</h5>
-    
-            
-<div class="param-desc">
-    The maximum geometric error.
-</div>
-
-
-        
-
-    
-
-    
-<dl class="details">
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-</dd>
-
-        
-            
-<dt>
-    <div class="nameContainer">
-    <h4 class="name" id="getTileDataAvailable">
-        <a href="#getTileDataAvailable" class="doc-link"></a>
-        getTileDataAvailable<span class="signature">(x, y, level)</span> &rarr; <span class="type-signature returnType">Boolean</span>
-        
-
-<div class="source-link rightLinks">
-    <a href="https://github.com/AnalyticalGraphicsInc/cesium/blob/1.25/Source/Core/CesiumTerrainProvider.js#L736">Core/CesiumTerrainProvider.js 736</a>
-</div>
-
-
-    </h4>
-
-    </div>
-
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        Determines whether data for a tile is available to be loaded.
-    </div>
-    
-
-    
-
-    
-
-    
-
-    
-        
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>x</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Number</span>
-
-
-            
-            </td>
-
-            
-
-            <td class="description last">
-            
-                The X coordinate of the tile for which to request geometry.</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>y</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Number</span>
-
-
-            
-            </td>
-
-            
-
-            <td class="description last">
-            
-                The Y coordinate of the tile for which to request geometry.</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>level</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Number</span>
-
-
-            
-            </td>
-
-            
-
-            <td class="description last">
-            
-                The level of the tile for which to request geometry.</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <h5>Returns:</h5>
-    
-            
-<div class="param-desc">
-    Undefined if not supported, otherwise true or false.
-</div>
-
-
-        
-
-    
-
-    
-<dl class="details">
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-</dd>
-
-        
-            
-<dt>
-    <div class="nameContainer">
-    <h4 class="name" id="requestTileGeometry">
-        <a href="#requestTileGeometry" class="doc-link"></a>
-        requestTileGeometry<span class="signature">(x, y, level, <span class="optional">throttleRequests</span>)</span> &rarr; <span class="type-signature returnType">Promise.&lt;<a href="TerrainData.html">TerrainData</a>>|undefined</span>
-        
-
-<div class="source-link rightLinks">
-    <a href="https://github.com/AnalyticalGraphicsInc/cesium/blob/1.25/Source/Core/CesiumTerrainProvider.js#L487">Core/CesiumTerrainProvider.js 487</a>
-</div>
-
-
-    </h4>
-
-    </div>
-
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        Requests the geometry for a given tile.  This function should not be called before
-<a href="CesiumTerrainProvider.html#ready"><code>CesiumTerrainProvider#ready</code></a> returns true.  The result must include terrain data and
-may optionally include a water mask and an indication of which child tiles are available.
-    </div>
-    
-
-    
-
-    
-
-    
-
-    
-        
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-        <th>Default</th>
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>x</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Number</span>
-
-
-            
-            </td>
-
-            
-                <td class="default">
-                
-                </td>
-            
-
-            <td class="description last">
-            
-                
-                
-
-                
-            
-                The X coordinate of the tile for which to request geometry.</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>y</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Number</span>
-
-
-            
-            </td>
-
-            
-                <td class="default">
-                
-                </td>
-            
-
-            <td class="description last">
-            
-                
-                
-
-                
-            
-                The Y coordinate of the tile for which to request geometry.</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>level</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Number</span>
-
-
-            
-            </td>
-
-            
-                <td class="default">
-                
-                </td>
-            
-
-            <td class="description last">
-            
-                
-                
-
-                
-            
-                The level of the tile for which to request geometry.</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>throttleRequests</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Boolean</span>
-
-
-            
-            </td>
-
-            
-                <td class="default">
-                
-                    <code class="language-javascript">true</code>
-                
-                </td>
-            
-
-            <td class="description last">
-            
-                
-                        <span class="optional">optional</span>
-                
-                
-
-                
-            
-                True if the number of simultaneous requests should be limited,
-                 or false if the request should be initiated regardless of the number of requests
-                 already in progress.</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <h5>Returns:</h5>
-    
-            
-<div class="param-desc">
-    A promise for the requested geometry.  If this method
-         returns undefined instead of a promise, it is an indication that too many requests are already
-         pending and the request will be retried later.
-</div>
-
-
-        
-
-    
-    <h5>Throws:</h5>
-    <ul>
-            <li>
-
-    <div class="param-desc">
-        
-<span class="param-type"><a href="DeveloperError.html">DeveloperError</a></span>
-
-: This function must not be called before <a href="CesiumTerrainProvider.html#ready"><code>CesiumTerrainProvider#ready</code></a>
-           returns true.
-    </div>
-
-</li>
-        </ul>
-    
-
-    
-<dl class="details">
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-</dd>
-
-        </dl>
     
 
     
