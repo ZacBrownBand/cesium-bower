@@ -7,6 +7,8 @@ This project is simply a wrapper for the [Cesiumjs repository](https://github.co
 
 This package only includes __unaltered__ minified code and assets.  
 
+Need the unminified code? We have that too, read [here](https://github.com/ZacBrownBand/cesium-bower/wiki/Getting-unminified-Cesium-code).
+
 ### Installation  
 
 ```
