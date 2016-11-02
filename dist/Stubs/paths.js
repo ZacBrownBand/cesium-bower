@@ -92,6 +92,7 @@ define(function() {
         'Core/getTimestamp' : '../Stubs/Cesium',
         'Core/GregorianDate' : '../Stubs/Cesium',
         'Core/HeadingPitchRange' : '../Stubs/Cesium',
+        'Core/HeadingPitchRoll' : '../Stubs/Cesium',
         'Core/HeightmapTerrainData' : '../Stubs/Cesium',
         'Core/HeightmapTessellator' : '../Stubs/Cesium',
         'Core/HermitePolynomialApproximation' : '../Stubs/Cesium',

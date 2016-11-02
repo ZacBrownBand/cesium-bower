@@ -362,6 +362,10 @@ define('Core/HeadingPitchRange', function() {
     return Cesium['HeadingPitchRange'];
 });
 
+define('Core/HeadingPitchRoll', function() {
+    return Cesium['HeadingPitchRoll'];
+});
+
 define('Core/HeightmapTerrainData', function() {
     return Cesium['HeightmapTerrainData'];
 });
