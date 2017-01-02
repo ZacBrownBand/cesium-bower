@@ -86,6 +86,10 @@ define('Core/CesiumTerrainProvider', function() {
     return Cesium['CesiumTerrainProvider'];
 });
 
+define('Core/Check', function() {
+    return Cesium['Check'];
+});
+
 define('Core/CircleGeometry', function() {
     return Cesium['CircleGeometry'];
 });
@@ -846,6 +850,10 @@ define('Core/WallOutlineGeometry', function() {
     return Cesium['WallOutlineGeometry'];
 });
 
+define('Core/WebGLConstants', function() {
+    return Cesium['WebGLConstants'];
+});
+
 define('Core/WebMercatorProjection', function() {
     return Cesium['WebMercatorProjection'];
 });
@@ -1278,6 +1286,10 @@ define('Renderer/MipmapHint', function() {
     return Cesium['MipmapHint'];
 });
 
+define('Renderer/Pass', function() {
+    return Cesium['Pass'];
+});
+
 define('Renderer/PassState', function() {
     return Cesium['PassState'];
 });
@@ -1346,10 +1358,6 @@ define('Renderer/VertexArrayFacade', function() {
     return Cesium['VertexArrayFacade'];
 });
 
-define('Renderer/WebGLConstants', function() {
-    return Cesium['WebGLConstants'];
-});
-
 define('Scene/Appearance', function() {
     return Cesium['Appearance'];
 });
@@ -1404,6 +1412,10 @@ define('Scene/CameraEventType', function() {
 
 define('Scene/CameraFlightPath', function() {
     return Cesium['CameraFlightPath'];
+});
+
+define('Scene/ColorBlendMode', function() {
+    return Cesium['ColorBlendMode'];
 });
 
 define('Scene/createOpenStreetMapImageryProvider', function() {
@@ -1484,6 +1496,10 @@ define('Scene/FrustumCommands', function() {
 
 define('Scene/FXAA', function() {
     return Cesium['FXAA'];
+});
+
+define('Scene/getAttributeOrUniformBySemantic', function() {
+    return Cesium['getAttributeOrUniformBySemantic'];
 });
 
 define('Scene/getBinaryAccessor', function() {
@@ -1640,10 +1656,6 @@ define('Scene/OIT', function() {
 
 define('Scene/OrthographicFrustum', function() {
     return Cesium['OrthographicFrustum'];
-});
-
-define('Scene/Pass', function() {
-    return Cesium['Pass'];
 });
 
 define('Scene/PerformanceDisplay', function() {
