@@ -11,7 +11,7 @@ var runSequence = require('run-sequence');
 var chug = require('gulp-chug');
 
 // --tag vX.X.X
-gulp.task('updateRelease', cb => {
+gulp.task('minifiedRelease', cb => {
 	runSequence(
 			'update-submodule',
 			'clean',
@@ -22,6 +22,23 @@ gulp.task('updateRelease', cb => {
 			'commit-minified',
 			'push',
 			'tag-minified',
+			'push-tags',
+			cb
+		);
+});
+
+// --tag vX.X.X
+gulp.task('release', cb => {
+	runSequence(
+			'update-submodule',
+			'clean',
+			'npm-install',
+			'cesium-release',
+			'move',
+			'stage-all',
+			'commit',
+			'push',
+			'tag',
 			'push-tags',
 			cb
 		);
@@ -43,3 +60,11 @@ gulp.task('cesium-minifyRelease', function (cb) {
 });
 gulp.task('commit-minified', shell.task(['git commit -m "Updating to support Cesium version ' + argv.tag + '."']));
 gulp.task('tag-minified', shell.task(['git tag ' + argv.tag]));
+
+// un-min
+gulp.task('cesium-release', function (cb) {
+	return gulp.src('cesium/gulpfile.js')
+		.pipe(chug({tasks:['release']}));
+});
+gulp.task('commit', shell.task(['git commit -m "Updating to support Cesium version ' + argv.tag + ' (un-minified)."']));
+gulp.task('tag', shell.task(['git tag ' + argv.tag + '-dev']));
