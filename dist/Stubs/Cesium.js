@@ -38,6 +38,10 @@ define('Core/BingMapsApi', function() {
     return Cesium['BingMapsApi'];
 });
 
+define('Core/BingMapsGeocoderService', function() {
+    return Cesium['BingMapsGeocoderService'];
+});
+
 define('Core/BoundingRectangle', function() {
     return Cesium['BoundingRectangle'];
 });
@@ -76,6 +80,10 @@ define('Core/Cartesian4', function() {
 
 define('Core/Cartographic', function() {
     return Cesium['Cartographic'];
+});
+
+define('Core/CartographicGeocoderService', function() {
+    return Cesium['CartographicGeocoderService'];
 });
 
 define('Core/CatmullRomSpline', function() {
@@ -288,6 +296,10 @@ define('Core/freezeObject', function() {
 
 define('Core/Fullscreen', function() {
     return Cesium['Fullscreen'];
+});
+
+define('Core/GeocoderService', function() {
+    return Cesium['GeocoderService'];
 });
 
 define('Core/GeographicProjection', function() {
@@ -706,6 +718,10 @@ define('Core/sampleTerrain', function() {
     return Cesium['sampleTerrain'];
 });
 
+define('Core/sampleTerrainMostDetailed', function() {
+    return Cesium['sampleTerrainMostDetailed'];
+});
+
 define('Core/scaleToGeodeticSurface', function() {
     return Cesium['scaleToGeodeticSurface'];
 });
@@ -776,6 +792,10 @@ define('Core/TerrainQuantization', function() {
 
 define('Core/throttleRequestByServer', function() {
     return Cesium['throttleRequestByServer'];
+});
+
+define('Core/TileAvailability', function() {
+    return Cesium['TileAvailability'];
 });
 
 define('Core/TileProviderError', function() {
@@ -1398,6 +1418,10 @@ define('Scene/BlendingState', function() {
     return Cesium['BlendingState'];
 });
 
+define('Scene/BlendOption', function() {
+    return Cesium['BlendOption'];
+});
+
 define('Scene/Camera', function() {
     return Cesium['Camera'];
 });
@@ -1568,6 +1592,10 @@ define('Scene/ImageryLayerFeatureInfo', function() {
 
 define('Scene/ImageryProvider', function() {
     return Cesium['ImageryProvider'];
+});
+
+define('Scene/ImagerySplitDirection', function() {
+    return Cesium['ImagerySplitDirection'];
 });
 
 define('Scene/ImageryState', function() {
