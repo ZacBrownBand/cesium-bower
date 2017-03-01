@@ -138,6 +138,10 @@ define('Core/ComponentDatatype', function() {
     return Cesium['ComponentDatatype'];
 });
 
+define('Core/CompressedTextureBuffer', function() {
+    return Cesium['CompressedTextureBuffer'];
+});
+
 define('Core/CornerType', function() {
     return Cesium['CornerType'];
 });
@@ -494,6 +498,10 @@ define('Core/loadBlob', function() {
     return Cesium['loadBlob'];
 });
 
+define('Core/loadCRN', function() {
+    return Cesium['loadCRN'];
+});
+
 define('Core/loadImage', function() {
     return Cesium['loadImage'];
 });
@@ -512,6 +520,10 @@ define('Core/loadJson', function() {
 
 define('Core/loadJsonp', function() {
     return Cesium['loadJsonp'];
+});
+
+define('Core/loadKTX', function() {
+    return Cesium['loadKTX'];
 });
 
 define('Core/loadText', function() {
@@ -1384,6 +1396,10 @@ define('Scene/Appearance', function() {
 
 define('Scene/ArcGisMapServerImageryProvider', function() {
     return Cesium['ArcGisMapServerImageryProvider'];
+});
+
+define('Scene/Axis', function() {
+    return Cesium['Axis'];
 });
 
 define('Scene/BatchTable', function() {
@@ -2504,6 +2520,10 @@ define('Shaders/ViewportQuadVS', function() {
 
 define('ThirdParty/Autolinker', function() {
     return Cesium['Autolinker'];
+});
+
+define('ThirdParty/crunch', function() {
+    return Cesium['crunch'];
 });
 
 define('ThirdParty/earcut-2.1.1', function() {

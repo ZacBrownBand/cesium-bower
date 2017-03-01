@@ -45,7 +45,7 @@ gulp.task('release', cb => {
 });
 
 // general
-gulp.task('update-submodule', shell.task(['echo Updating cesium with tag ' + argv.tag + '; cd cesium; git checkout tags/' + argv.tag]));
+gulp.task('update-submodule', shell.task(['echo Updating cesium with tag ' + argv.tag + '; cd cesium; git fetch; git checkout tags/' + argv.tag]));
 gulp.task('clean', shell.task(['rm -rf cesium/Build; rm -rf dist']));
 gulp.task('npm-install', shell.task(['npm install']));
 gulp.task('move', shell.task(['mv -v cesium/Build dist/']));
