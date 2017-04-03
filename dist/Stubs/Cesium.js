@@ -6,10 +6,6 @@ define('Core/appendForwardSlash', function() {
     return Cesium['appendForwardSlash'];
 });
 
-define('Core/ArcGisImageServerTerrainProvider', function() {
-    return Cesium['ArcGisImageServerTerrainProvider'];
-});
-
 define('Core/arrayRemoveDuplicates', function() {
     return Cesium['arrayRemoveDuplicates'];
 });
@@ -1702,6 +1698,10 @@ define('Scene/OrthographicFrustum', function() {
     return Cesium['OrthographicFrustum'];
 });
 
+define('Scene/OrthographicOffCenterFrustum', function() {
+    return Cesium['OrthographicOffCenterFrustum'];
+});
+
 define('Scene/PerformanceDisplay', function() {
     return Cesium['PerformanceDisplay'];
 });
@@ -2688,6 +2688,14 @@ define('Widgets/PerformanceWatchdog/PerformanceWatchdog', function() {
 
 define('Widgets/PerformanceWatchdog/PerformanceWatchdogViewModel', function() {
     return Cesium['PerformanceWatchdogViewModel'];
+});
+
+define('Widgets/ProjectionPicker/ProjectionPicker', function() {
+    return Cesium['ProjectionPicker'];
+});
+
+define('Widgets/ProjectionPicker/ProjectionPickerViewModel', function() {
+    return Cesium['ProjectionPickerViewModel'];
 });
 
 define('Widgets/SceneModePicker/SceneModePicker', function() {

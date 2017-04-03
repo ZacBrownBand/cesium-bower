@@ -3,7 +3,6 @@ define(function() {
     'use strict';
     return {
         'Core/appendForwardSlash' : '../Stubs/Cesium',
-        'Core/ArcGisImageServerTerrainProvider' : '../Stubs/Cesium',
         'Core/arrayRemoveDuplicates' : '../Stubs/Cesium',
         'Core/AssociativeArray' : '../Stubs/Cesium',
         'Core/AttributeCompression' : '../Stubs/Cesium',
@@ -427,6 +426,7 @@ define(function() {
         'Scene/NeverTileDiscardPolicy' : '../Stubs/Cesium',
         'Scene/OIT' : '../Stubs/Cesium',
         'Scene/OrthographicFrustum' : '../Stubs/Cesium',
+        'Scene/OrthographicOffCenterFrustum' : '../Stubs/Cesium',
         'Scene/PerformanceDisplay' : '../Stubs/Cesium',
         'Scene/PerInstanceColorAppearance' : '../Stubs/Cesium',
         'Scene/PerspectiveFrustum' : '../Stubs/Cesium',
@@ -674,6 +674,8 @@ define(function() {
         'Widgets/NavigationHelpButton/NavigationHelpButtonViewModel' : '../Stubs/Cesium',
         'Widgets/PerformanceWatchdog/PerformanceWatchdog' : '../Stubs/Cesium',
         'Widgets/PerformanceWatchdog/PerformanceWatchdogViewModel' : '../Stubs/Cesium',
+        'Widgets/ProjectionPicker/ProjectionPicker' : '../Stubs/Cesium',
+        'Widgets/ProjectionPicker/ProjectionPickerViewModel' : '../Stubs/Cesium',
         'Widgets/SceneModePicker/SceneModePicker' : '../Stubs/Cesium',
         'Widgets/SceneModePicker/SceneModePickerViewModel' : '../Stubs/Cesium',
         'Widgets/SelectionIndicator/SelectionIndicator' : '../Stubs/Cesium',
