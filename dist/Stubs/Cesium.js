@@ -370,6 +370,18 @@ define('Core/getTimestamp', function() {
     return Cesium['getTimestamp'];
 });
 
+define('Core/GoogleEarthEnterpriseMetadata', function() {
+    return Cesium['GoogleEarthEnterpriseMetadata'];
+});
+
+define('Core/GoogleEarthEnterpriseTerrainData', function() {
+    return Cesium['GoogleEarthEnterpriseTerrainData'];
+});
+
+define('Core/GoogleEarthEnterpriseTerrainProvider', function() {
+    return Cesium['GoogleEarthEnterpriseTerrainProvider'];
+});
+
 define('Core/GregorianDate', function() {
     return Cesium['GregorianDate'];
 });
@@ -1126,6 +1138,10 @@ define('DataSources/PolylineArrowMaterialProperty', function() {
     return Cesium['PolylineArrowMaterialProperty'];
 });
 
+define('DataSources/PolylineDashMaterialProperty', function() {
+    return Cesium['PolylineDashMaterialProperty'];
+});
+
 define('DataSources/PolylineGeometryUpdater', function() {
     return Cesium['PolylineGeometryUpdater'];
 });
@@ -1564,6 +1580,10 @@ define('Scene/GlobeSurfaceTile', function() {
 
 define('Scene/GlobeSurfaceTileProvider', function() {
     return Cesium['GlobeSurfaceTileProvider'];
+});
+
+define('Scene/GoogleEarthEnterpriseImageryProvider', function() {
+    return Cesium['GoogleEarthEnterpriseImageryProvider'];
 });
 
 define('Scene/GoogleEarthImageryProvider', function() {
@@ -2406,6 +2426,10 @@ define('Shaders/Materials/PolylineArrowMaterial', function() {
     return Cesium['PolylineArrowMaterial'];
 });
 
+define('Shaders/Materials/PolylineDashMaterial', function() {
+    return Cesium['PolylineDashMaterial'];
+});
+
 define('Shaders/Materials/PolylineGlowMaterial', function() {
     return Cesium['PolylineGlowMaterial'];
 });
@@ -2560,6 +2584,18 @@ define('ThirdParty/mersenne-twister', function() {
 
 define('ThirdParty/NoSleep', function() {
     return Cesium['NoSleep'];
+});
+
+define('ThirdParty/pako_inflate', function() {
+    return Cesium['pako_inflate'];
+});
+
+define('ThirdParty/protobuf-minimal', function() {
+    return Cesium['protobuf-minimal'];
+});
+
+define('ThirdParty/Shaders/FXAA3_11', function() {
+    return Cesium['FXAA3_11'];
 });
 
 define('ThirdParty/sprintf', function() {
