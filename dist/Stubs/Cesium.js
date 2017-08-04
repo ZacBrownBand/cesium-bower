@@ -169,6 +169,10 @@ define('Core/CubicRealPolynomial', function() {
     return Cesium['CubicRealPolynomial'];
 });
 
+define('Core/CullingVolume', function() {
+    return Cesium['CullingVolume'];
+});
+
 define('Core/CylinderGeometry', function() {
     return Cesium['CylinderGeometry'];
 });
@@ -303,6 +307,14 @@ define('Core/formatError', function() {
 
 define('Core/freezeObject', function() {
     return Cesium['freezeObject'];
+});
+
+define('Core/FrustumGeometry', function() {
+    return Cesium['FrustumGeometry'];
+});
+
+define('Core/FrustumOutlineGeometry', function() {
+    return Cesium['FrustumOutlineGeometry'];
 });
 
 define('Core/Fullscreen', function() {
@@ -629,6 +641,14 @@ define('Core/OrientedBoundingBox', function() {
     return Cesium['OrientedBoundingBox'];
 });
 
+define('Core/OrthographicFrustum', function() {
+    return Cesium['OrthographicFrustum'];
+});
+
+define('Core/OrthographicOffCenterFrustum', function() {
+    return Cesium['OrthographicOffCenterFrustum'];
+});
+
 define('Core/Packable', function() {
     return Cesium['Packable'];
 });
@@ -639,6 +659,14 @@ define('Core/PackableForInterpolation', function() {
 
 define('Core/parseResponseHeaders', function() {
     return Cesium['parseResponseHeaders'];
+});
+
+define('Core/PerspectiveFrustum', function() {
+    return Cesium['PerspectiveFrustum'];
+});
+
+define('Core/PerspectiveOffCenterFrustum', function() {
+    return Cesium['PerspectiveOffCenterFrustum'];
 });
 
 define('Core/PinBuilder', function() {
@@ -943,6 +971,10 @@ define('Core/WebMercatorProjection', function() {
 
 define('Core/WebMercatorTilingScheme', function() {
     return Cesium['WebMercatorTilingScheme'];
+});
+
+define('Core/WeightSpline', function() {
+    return Cesium['WeightSpline'];
 });
 
 define('Core/WindingOrder', function() {
@@ -1373,6 +1405,10 @@ define('Renderer/MipmapHint', function() {
     return Cesium['MipmapHint'];
 });
 
+define('Renderer/modernizeShader', function() {
+    return Cesium['modernizeShader'];
+});
+
 define('Renderer/Pass', function() {
     return Cesium['Pass'];
 });
@@ -1505,6 +1541,10 @@ define('Scene/BoxEmitter', function() {
     return Cesium['BoxEmitter'];
 });
 
+define('Scene/BrdfLutGenerator', function() {
+    return Cesium['BrdfLutGenerator'];
+});
+
 define('Scene/Camera', function() {
     return Cesium['Camera'];
 });
@@ -1591,6 +1631,10 @@ define('Scene/Cesium3DTileStyleEngine', function() {
 
 define('Scene/CircleEmitter', function() {
     return Cesium['CircleEmitter'];
+});
+
+define('Scene/ClassificationPrimitive', function() {
+    return Cesium['ClassificationPrimitive'];
 });
 
 define('Scene/ColorBlendMode', function() {
@@ -1863,10 +1907,6 @@ define('Scene/ModelInstanceCollection', function() {
 
 define('Scene/ModelMaterial', function() {
     return Cesium['ModelMaterial'];
-});
-
-define('Scene/modelMaterialsCommon', function() {
-    return Cesium['modelMaterialsCommon'];
 });
 
 define('Scene/ModelMesh', function() {
@@ -2211,6 +2251,10 @@ define('Shaders/BillboardCollectionFS', function() {
 
 define('Shaders/BillboardCollectionVS', function() {
     return Cesium['BillboardCollectionVS'];
+});
+
+define('Shaders/BrdfLutGeneratorFS', function() {
+    return Cesium['BrdfLutGeneratorFS'];
 });
 
 define('Shaders/Builtin/Constants/degreesPerRadian', function() {
@@ -2785,8 +2829,92 @@ define('ThirdParty/earcut-2.1.1', function() {
     return Cesium['earcut-2.1.1'];
 });
 
-define('ThirdParty/gltfDefaults', function() {
-    return Cesium['gltfDefaults'];
+define('ThirdParty/GltfPipeline/addDefaults', function() {
+    return Cesium['addDefaults'];
+});
+
+define('ThirdParty/GltfPipeline/addExtensionsRequired', function() {
+    return Cesium['addExtensionsRequired'];
+});
+
+define('ThirdParty/GltfPipeline/addExtensionsUsed', function() {
+    return Cesium['addExtensionsUsed'];
+});
+
+define('ThirdParty/GltfPipeline/addPipelineExtras', function() {
+    return Cesium['addPipelineExtras'];
+});
+
+define('ThirdParty/GltfPipeline/addToArray', function() {
+    return Cesium['addToArray'];
+});
+
+define('ThirdParty/GltfPipeline/byteLengthForComponentType', function() {
+    return Cesium['byteLengthForComponentType'];
+});
+
+define('ThirdParty/GltfPipeline/findAccessorMinMax', function() {
+    return Cesium['findAccessorMinMax'];
+});
+
+define('ThirdParty/GltfPipeline/ForEach', function() {
+    return Cesium['ForEach'];
+});
+
+define('ThirdParty/GltfPipeline/getAccessorByteStride', function() {
+    return Cesium['getAccessorByteStride'];
+});
+
+define('ThirdParty/GltfPipeline/getJointCountForMaterials', function() {
+    return Cesium['getJointCountForMaterials'];
+});
+
+define('ThirdParty/GltfPipeline/getUniqueId', function() {
+    return Cesium['getUniqueId'];
+});
+
+define('ThirdParty/GltfPipeline/glslTypeToWebGLConstant', function() {
+    return Cesium['glslTypeToWebGLConstant'];
+});
+
+define('ThirdParty/GltfPipeline/numberOfComponentsForType', function() {
+    return Cesium['numberOfComponentsForType'];
+});
+
+define('ThirdParty/GltfPipeline/parseBinaryGltf', function() {
+    return Cesium['parseBinaryGltf'];
+});
+
+define('ThirdParty/GltfPipeline/processModelMaterialsCommon', function() {
+    return Cesium['processModelMaterialsCommon'];
+});
+
+define('ThirdParty/GltfPipeline/processPbrMetallicRoughness', function() {
+    return Cesium['processPbrMetallicRoughness'];
+});
+
+define('ThirdParty/GltfPipeline/removeExtensionsRequired', function() {
+    return Cesium['removeExtensionsRequired'];
+});
+
+define('ThirdParty/GltfPipeline/removeExtensionsUsed', function() {
+    return Cesium['removeExtensionsUsed'];
+});
+
+define('ThirdParty/GltfPipeline/removePipelineExtras', function() {
+    return Cesium['removePipelineExtras'];
+});
+
+define('ThirdParty/GltfPipeline/techniqueParameterForSemantic', function() {
+    return Cesium['techniqueParameterForSemantic'];
+});
+
+define('ThirdParty/GltfPipeline/updateVersion', function() {
+    return Cesium['updateVersion'];
+});
+
+define('ThirdParty/GltfPipeline/webGLConstantToGlslType', function() {
+    return Cesium['webGLConstantToGlslType'];
 });
 
 define('ThirdParty/google-earth-dbroot-parser', function() {
