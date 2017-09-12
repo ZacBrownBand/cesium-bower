@@ -1157,8 +1157,28 @@ define('DataSources/ImageMaterialProperty', function() {
     return Cesium['ImageMaterialProperty'];
 });
 
+define('DataSources/KmlCamera', function() {
+    return Cesium['KmlCamera'];
+});
+
 define('DataSources/KmlDataSource', function() {
     return Cesium['KmlDataSource'];
+});
+
+define('DataSources/KmlLookAt', function() {
+    return Cesium['KmlLookAt'];
+});
+
+define('DataSources/KmlTour', function() {
+    return Cesium['KmlTour'];
+});
+
+define('DataSources/KmlTourFlyTo', function() {
+    return Cesium['KmlTourFlyTo'];
+});
+
+define('DataSources/KmlTourWait', function() {
+    return Cesium['KmlTourWait'];
 });
 
 define('DataSources/LabelGraphics', function() {
@@ -1637,6 +1657,10 @@ define('Scene/ClassificationPrimitive', function() {
     return Cesium['ClassificationPrimitive'];
 });
 
+define('Scene/ClassificationType', function() {
+    return Cesium['ClassificationType'];
+});
+
 define('Scene/ColorBlendMode', function() {
     return Cesium['ColorBlendMode'];
 });
@@ -1783,10 +1807,6 @@ define('Scene/GoogleEarthEnterpriseImageryProvider', function() {
 
 define('Scene/GoogleEarthEnterpriseMapsProvider', function() {
     return Cesium['GoogleEarthEnterpriseMapsProvider'];
-});
-
-define('Scene/GoogleEarthImageryProvider', function() {
-    return Cesium['GoogleEarthImageryProvider'];
 });
 
 define('Scene/GridImageryProvider', function() {
@@ -2309,6 +2329,10 @@ define('Shaders/Builtin/Constants/passCesium3DTile', function() {
     return Cesium['passCesium3DTile'];
 });
 
+define('Shaders/Builtin/Constants/passCesium3DTileClassification', function() {
+    return Cesium['passCesium3DTileClassification'];
+});
+
 define('Shaders/Builtin/Constants/passCompute', function() {
     return Cesium['passCompute'];
 });
@@ -2321,16 +2345,16 @@ define('Shaders/Builtin/Constants/passGlobe', function() {
     return Cesium['passGlobe'];
 });
 
-define('Shaders/Builtin/Constants/passGround', function() {
-    return Cesium['passGround'];
-});
-
 define('Shaders/Builtin/Constants/passOpaque', function() {
     return Cesium['passOpaque'];
 });
 
 define('Shaders/Builtin/Constants/passOverlay', function() {
     return Cesium['passOverlay'];
+});
+
+define('Shaders/Builtin/Constants/passTerrainClassification', function() {
+    return Cesium['passTerrainClassification'];
 });
 
 define('Shaders/Builtin/Constants/passTranslucent', function() {
