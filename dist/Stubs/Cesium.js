@@ -1697,10 +1697,6 @@ define('Scene/CullFace', function() {
     return Cesium['CullFace'];
 });
 
-define('Scene/CullingVolume', function() {
-    return Cesium['CullingVolume'];
-});
-
 define('Scene/DebugAppearance', function() {
     return Cesium['DebugAppearance'];
 });
@@ -1949,14 +1945,6 @@ define('Scene/OIT', function() {
     return Cesium['OIT'];
 });
 
-define('Scene/OrthographicFrustum', function() {
-    return Cesium['OrthographicFrustum'];
-});
-
-define('Scene/OrthographicOffCenterFrustum', function() {
-    return Cesium['OrthographicOffCenterFrustum'];
-});
-
 define('Scene/Particle', function() {
     return Cesium['Particle'];
 });
@@ -1979,14 +1967,6 @@ define('Scene/PerformanceDisplay', function() {
 
 define('Scene/PerInstanceColorAppearance', function() {
     return Cesium['PerInstanceColorAppearance'];
-});
-
-define('Scene/PerspectiveFrustum', function() {
-    return Cesium['PerspectiveFrustum'];
-});
-
-define('Scene/PerspectiveOffCenterFrustum', function() {
-    return Cesium['PerspectiveOffCenterFrustum'];
 });
 
 define('Scene/PickDepth', function() {
@@ -2893,10 +2873,6 @@ define('ThirdParty/GltfPipeline/getJointCountForMaterials', function() {
     return Cesium['getJointCountForMaterials'];
 });
 
-define('ThirdParty/GltfPipeline/getUniqueId', function() {
-    return Cesium['getUniqueId'];
-});
-
 define('ThirdParty/GltfPipeline/glslTypeToWebGLConstant', function() {
     return Cesium['glslTypeToWebGLConstant'];
 });
@@ -2953,8 +2929,8 @@ define('ThirdParty/kdbush', function() {
     return Cesium['kdbush'];
 });
 
-define('ThirdParty/knockout-3.4.0', function() {
-    return Cesium['knockout-3.4.0'];
+define('ThirdParty/knockout-3.4.2', function() {
+    return Cesium['knockout-3.4.2'];
 });
 
 define('ThirdParty/knockout-es5', function() {
