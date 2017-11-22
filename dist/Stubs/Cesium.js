@@ -1417,6 +1417,10 @@ define('Renderer/Framebuffer', function() {
     return Cesium['Framebuffer'];
 });
 
+define('Renderer/freezeRenderState', function() {
+    return Cesium['freezeRenderState'];
+});
+
 define('Renderer/loadCubeMap', function() {
     return Cesium['loadCubeMap'];
 });
@@ -1851,6 +1855,10 @@ define('Scene/ImageryState', function() {
 
 define('Scene/Instanced3DModel3DTileContent', function() {
     return Cesium['Instanced3DModel3DTileContent'];
+});
+
+define('Scene/InvertClassification', function() {
+    return Cesium['InvertClassification'];
 });
 
 define('Scene/JobScheduler', function() {
@@ -2311,6 +2319,10 @@ define('Shaders/Builtin/Constants/passCesium3DTile', function() {
 
 define('Shaders/Builtin/Constants/passCesium3DTileClassification', function() {
     return Cesium['passCesium3DTileClassification'];
+});
+
+define('Shaders/Builtin/Constants/passCesium3DTileClassificationIgnoreShow', function() {
+    return Cesium['passCesium3DTileClassificationIgnoreShow'];
 });
 
 define('Shaders/Builtin/Constants/passCompute', function() {
