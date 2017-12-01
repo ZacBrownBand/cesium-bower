@@ -2701,6 +2701,14 @@ define('Shaders/Materials/DotMaterial', function() {
     return Cesium['DotMaterial'];
 });
 
+define('Shaders/Materials/ElevationContourMaterial', function() {
+    return Cesium['ElevationContourMaterial'];
+});
+
+define('Shaders/Materials/ElevationRampMaterial', function() {
+    return Cesium['ElevationRampMaterial'];
+});
+
 define('Shaders/Materials/FadeMaterial', function() {
     return Cesium['FadeMaterial'];
 });
@@ -2731,6 +2739,10 @@ define('Shaders/Materials/PolylineOutlineMaterial', function() {
 
 define('Shaders/Materials/RimLightingMaterial', function() {
     return Cesium['RimLightingMaterial'];
+});
+
+define('Shaders/Materials/SlopeRampMaterial', function() {
+    return Cesium['SlopeRampMaterial'];
 });
 
 define('Shaders/Materials/StripeMaterial', function() {
