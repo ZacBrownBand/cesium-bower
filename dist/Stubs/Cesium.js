@@ -105,6 +105,10 @@ define('Core/CircleOutlineGeometry', function() {
     return Cesium['CircleOutlineGeometry'];
 });
 
+define('Core/ClippingPlaneCollection', function() {
+    return Cesium['ClippingPlaneCollection'];
+});
+
 define('Core/Clock', function() {
     return Cesium['Clock'];
 });
@@ -681,6 +685,14 @@ define('Core/Plane', function() {
     return Cesium['Plane'];
 });
 
+define('Core/PlaneGeometry', function() {
+    return Cesium['PlaneGeometry'];
+});
+
+define('Core/PlaneOutlineGeometry', function() {
+    return Cesium['PlaneOutlineGeometry'];
+});
+
 define('Core/pointInsideTriangle', function() {
     return Cesium['pointInsideTriangle'];
 });
@@ -1211,6 +1223,14 @@ define('DataSources/PathGraphics', function() {
 
 define('DataSources/PathVisualizer', function() {
     return Cesium['PathVisualizer'];
+});
+
+define('DataSources/PlaneGeometryUpdater', function() {
+    return Cesium['PlaneGeometryUpdater'];
+});
+
+define('DataSources/PlaneGraphics', function() {
+    return Cesium['PlaneGraphics'];
 });
 
 define('DataSources/PointGraphics', function() {
@@ -2305,6 +2325,10 @@ define('Shaders/Builtin/Constants/infinity', function() {
     return Cesium['infinity'];
 });
 
+define('Shaders/Builtin/Constants/maxClippingPlanes', function() {
+    return Cesium['maxClippingPlanes'];
+});
+
 define('Shaders/Builtin/Constants/oneOverPi', function() {
     return Cesium['oneOverPi'];
 });
@@ -2451,6 +2475,14 @@ define('Shaders/Builtin/Functions/cosineAndSine', function() {
 
 define('Shaders/Builtin/Functions/decompressTextureCoordinates', function() {
     return Cesium['decompressTextureCoordinates'];
+});
+
+define('Shaders/Builtin/Functions/discardIfClippedWithIntersect', function() {
+    return Cesium['discardIfClippedWithIntersect'];
+});
+
+define('Shaders/Builtin/Functions/discardIfClippedWithUnion', function() {
+    return Cesium['discardIfClippedWithUnion'];
 });
 
 define('Shaders/Builtin/Functions/eastNorthUpToEyeCoordinates', function() {
