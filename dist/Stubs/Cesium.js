@@ -169,6 +169,10 @@ define('Core/createGuid', function() {
     return Cesium['createGuid'];
 });
 
+define('Core/createWorldTerrain', function() {
+    return Cesium['createWorldTerrain'];
+});
+
 define('Core/Credit', function() {
     return Cesium['Credit'];
 });
@@ -491,6 +495,14 @@ define('Core/IntersectionTests', function() {
 
 define('Core/Interval', function() {
     return Cesium['Interval'];
+});
+
+define('Core/Ion', function() {
+    return Cesium['Ion'];
+});
+
+define('Core/IonResource', function() {
+    return Cesium['IonResource'];
 });
 
 define('Core/isArray', function() {
@@ -1113,8 +1125,8 @@ define('DataSources/DataSourceDisplay', function() {
     return Cesium['DataSourceDisplay'];
 });
 
-define('DataSources/dynamicGeometryGetBoundingSphere', function() {
-    return Cesium['dynamicGeometryGetBoundingSphere'];
+define('DataSources/DynamicGeometryBatch', function() {
+    return Cesium['DynamicGeometryBatch'];
 });
 
 define('DataSources/DynamicGeometryUpdater', function() {
@@ -1275,6 +1287,10 @@ define('DataSources/PolylineGraphics', function() {
 
 define('DataSources/PolylineOutlineMaterialProperty', function() {
     return Cesium['PolylineOutlineMaterialProperty'];
+});
+
+define('DataSources/PolylineVisualizer', function() {
+    return Cesium['PolylineVisualizer'];
 });
 
 define('DataSources/PolylineVolumeGeometryUpdater', function() {
@@ -1681,14 +1697,6 @@ define('Scene/Cesium3DTileStyleEngine', function() {
     return Cesium['Cesium3DTileStyleEngine'];
 });
 
-define('Scene/CesiumIon', function() {
-    return Cesium['CesiumIon'];
-});
-
-define('Scene/CesiumIonResource', function() {
-    return Cesium['CesiumIonResource'];
-});
-
 define('Scene/CircleEmitter', function() {
     return Cesium['CircleEmitter'];
 });
@@ -1903,6 +1911,10 @@ define('Scene/Instanced3DModel3DTileContent', function() {
 
 define('Scene/InvertClassification', function() {
     return Cesium['InvertClassification'];
+});
+
+define('Scene/IonImageryProvider', function() {
+    return Cesium['IonImageryProvider'];
 });
 
 define('Scene/JobScheduler', function() {
