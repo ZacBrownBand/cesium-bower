@@ -109,10 +109,6 @@ define('Core/CircleOutlineGeometry', function() {
     return Cesium['CircleOutlineGeometry'];
 });
 
-define('Core/ClippingPlaneCollection', function() {
-    return Cesium['ClippingPlaneCollection'];
-});
-
 define('Core/Clock', function() {
     return Cesium['Clock'];
 });
@@ -557,52 +553,16 @@ define('Core/LinearSpline', function() {
     return Cesium['LinearSpline'];
 });
 
-define('Core/loadArrayBuffer', function() {
-    return Cesium['loadArrayBuffer'];
-});
-
-define('Core/loadBlob', function() {
-    return Cesium['loadBlob'];
-});
-
 define('Core/loadCRN', function() {
     return Cesium['loadCRN'];
-});
-
-define('Core/loadImage', function() {
-    return Cesium['loadImage'];
 });
 
 define('Core/loadImageFromTypedArray', function() {
     return Cesium['loadImageFromTypedArray'];
 });
 
-define('Core/loadImageViaBlob', function() {
-    return Cesium['loadImageViaBlob'];
-});
-
-define('Core/loadJson', function() {
-    return Cesium['loadJson'];
-});
-
-define('Core/loadJsonp', function() {
-    return Cesium['loadJsonp'];
-});
-
 define('Core/loadKTX', function() {
     return Cesium['loadKTX'];
-});
-
-define('Core/loadText', function() {
-    return Cesium['loadText'];
-});
-
-define('Core/loadWithXhr', function() {
-    return Cesium['loadWithXhr'];
-});
-
-define('Core/loadXML', function() {
-    return Cesium['loadXML'];
 });
 
 define('Core/ManagedArray', function() {
@@ -1713,6 +1673,14 @@ define('Scene/ClassificationType', function() {
     return Cesium['ClassificationType'];
 });
 
+define('Scene/ClippingPlane', function() {
+    return Cesium['ClippingPlane'];
+});
+
+define('Scene/ClippingPlaneCollection', function() {
+    return Cesium['ClippingPlaneCollection'];
+});
+
 define('Scene/ColorBlendMode', function() {
     return Cesium['ColorBlendMode'];
 });
@@ -1781,6 +1749,10 @@ define('Scene/DiscardMissingTileImagePolicy', function() {
     return Cesium['DiscardMissingTileImagePolicy'];
 });
 
+define('Scene/DracoLoader', function() {
+    return Cesium['DracoLoader'];
+});
+
 define('Scene/EllipsoidPrimitive', function() {
     return Cesium['EllipsoidPrimitive'];
 });
@@ -1827,6 +1799,14 @@ define('Scene/Geometry3DTileContent', function() {
 
 define('Scene/getBinaryAccessor', function() {
     return Cesium['getBinaryAccessor'];
+});
+
+define('Scene/getClipAndStyleCode', function() {
+    return Cesium['getClipAndStyleCode'];
+});
+
+define('Scene/getClippingFunction', function() {
+    return Cesium['getClippingFunction'];
 });
 
 define('Scene/GetFeatureInfoFormat', function() {
@@ -2405,10 +2385,6 @@ define('Shaders/Builtin/Constants/infinity', function() {
     return Cesium['infinity'];
 });
 
-define('Shaders/Builtin/Constants/maxClippingPlanes', function() {
-    return Cesium['maxClippingPlanes'];
-});
-
 define('Shaders/Builtin/Constants/oneOverPi', function() {
     return Cesium['oneOverPi'];
 });
@@ -2565,14 +2541,6 @@ define('Shaders/Builtin/Functions/depthClampFarPlane', function() {
     return Cesium['depthClampFarPlane'];
 });
 
-define('Shaders/Builtin/Functions/discardIfClippedWithIntersect', function() {
-    return Cesium['discardIfClippedWithIntersect'];
-});
-
-define('Shaders/Builtin/Functions/discardIfClippedWithUnion', function() {
-    return Cesium['discardIfClippedWithUnion'];
-});
-
 define('Shaders/Builtin/Functions/eastNorthUpToEyeCoordinates', function() {
     return Cesium['eastNorthUpToEyeCoordinates'];
 });
@@ -2725,6 +2693,10 @@ define('Shaders/Builtin/Functions/tangentToEyeSpaceMatrix', function() {
     return Cesium['tangentToEyeSpaceMatrix'];
 });
 
+define('Shaders/Builtin/Functions/transformPlane', function() {
+    return Cesium['transformPlane'];
+});
+
 define('Shaders/Builtin/Functions/translateRelativeToEye', function() {
     return Cesium['translateRelativeToEye'];
 });
@@ -2739,6 +2711,10 @@ define('Shaders/Builtin/Functions/transpose', function() {
 
 define('Shaders/Builtin/Functions/unpackDepth', function() {
     return Cesium['unpackDepth'];
+});
+
+define('Shaders/Builtin/Functions/unpackFloat', function() {
+    return Cesium['unpackFloat'];
 });
 
 define('Shaders/Builtin/Functions/windowToEyeCoordinates', function() {
@@ -2981,10 +2957,6 @@ define('ThirdParty/Autolinker', function() {
     return Cesium['Autolinker'];
 });
 
-define('ThirdParty/crunch', function() {
-    return Cesium['crunch'];
-});
-
 define('ThirdParty/earcut-2.1.1', function() {
     return Cesium['earcut-2.1.1'];
 });
@@ -3109,10 +3081,6 @@ define('ThirdParty/NoSleep', function() {
     return Cesium['NoSleep'];
 });
 
-define('ThirdParty/pako_inflate', function() {
-    return Cesium['pako_inflate'];
-});
-
 define('ThirdParty/protobuf-minimal', function() {
     return Cesium['protobuf-minimal'];
 });
@@ -3139,6 +3107,10 @@ define('ThirdParty/Uri', function() {
 
 define('ThirdParty/when', function() {
     return Cesium['when'];
+});
+
+define('ThirdParty/xss', function() {
+    return Cesium['xss'];
 });
 
 define('ThirdParty/zip', function() {
